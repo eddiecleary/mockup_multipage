@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: $tertiary;
+  color: $secondary;
+
+  &:hover {
+    background-color: $tertiary-dark;
+  }
+}
+
+.btn-link {
+  background-color: transparent;
+  position: relative;
+
+  &:hover {
+    color: $tertiary;
+    background-color: transparent;
+
+    svg {
+      margin-left: 10px;
+      
+      path {
+        stroke: $tertiary;
+      }
+    }
+  }
+
+  svg {
+    width: 9px;
+    height: auto;
+    margin-left: 5px;
+    transition: all 0.25s ease;
+    position: absolute;
+    top: 52.5%;
+    transform: translateY(-50%);
+
+    path {
+      stroke-width: 5px;
+    }
+  }
+}

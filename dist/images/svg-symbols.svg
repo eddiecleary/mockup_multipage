@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="dropdown" viewBox="0 0 15 9"> <path d="M1 1L7.5 7L14 1" stroke="#FFF2D9" stroke-width="1.75" preserveAspectRatio="xMidYMid meet"/> </symbol>
 <symbol id="ellipse" viewBox="0 0 74 74"> <circle cx="37" cy="37" r="32.5" fill="#A90D0D" stroke="#FFF2D9" stroke-width="9"/> </symbol>
+<symbol id="point-next" viewBox="0 0 30 51"> <path d="M3 3L27 24.5L3 48.5" stroke="#FFF2D9" stroke-width="3" stroke-linecap="square"/> </symbol>
+<symbol id="point-prev" viewBox="0 0 29 51"> <path d="M26.5 48.5L2.5 27L26.5 3" stroke="#FFF2D9" stroke-width="3" stroke-linecap="square"/> </symbol>
 </svg>

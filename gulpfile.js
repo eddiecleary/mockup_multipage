@@ -9,7 +9,11 @@ const gulp = require("gulp"),
   changed = require("gulp-changed"),
   liveReload = require("gulp-livereload")
   plumberNotifier = require('gulp-plumber-notifier'),
-  svgSymbols = require('gulp-svg-symbols');
+  svgSymbols = require('gulp-svg-symbols'),
+  rollup = require('gulp-better-rollup'),
+  babel = require('rollup-plugin-babel'),
+  resolve = require('rollup-plugin-node-resolve'),
+  commonjs = require('rollup-plugin-commonjs');
 
 const paths = {
   styles: {
@@ -57,6 +61,7 @@ function scripts() {
     gulp
       .src(paths.scripts.src)
       .pipe(plumberNotifier())
+      .pipe(rollup({ plugins: [babel(), resolve(), commonjs()]}, 'umd'))
       .pipe(gulp.dest(paths.scripts.dest))
       .pipe(liveReload())
   );
