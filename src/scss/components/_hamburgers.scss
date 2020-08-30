@@ -1,0 +1,7 @@
+$hamburger-types: 'spin';
+$hamburger-layer-color: $secondary;
+$hamburger-layer-width: 35px;
+$hamburger-layer-spacing: 6px;
+$hamburger-hover-opacity: 0.7;
+
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";

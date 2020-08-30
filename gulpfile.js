@@ -67,10 +67,7 @@ function icons() {
     gulp
       .src(paths.icons.src)
       .pipe(plumberNotifier())
-      .pipe(svgSymbols({
-        style: 'positon: absolute;',
-        'aria-hidden': 'true'
-      }))
+      .pipe(svgSymbols())
       .pipe(gulp.dest(paths.icons.dest))
       .pipe(liveReload())
   );

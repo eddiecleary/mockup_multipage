@@ -5,9 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multipage Example</title>
   <link rel="stylesheet" href="./css/styles.min.css">
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
-  
-  
+
+  <header class="header">
+    <div class="container">
+      <div class="wrap">
+        <a href="./">
+          <img src="./images/logo.svg" alt="Carl Michaels Logo">
+        </a>
+        <nav>
+          <ul id="nav">
+            <li class="sub-menu-hover"><a class="wrap-svg" href="./books.html">Books
+                <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7.5 7L14 1" stroke="#a90d0d" stroke-width="2.75" />
+                </svg>
+                </a>
+              <ul class="sub-menu">
+                <li><a href="./books/jamais-vu">Jamais Vu</a></li>
+                <li><a href="./books/secrets">Secrets</a></li>
+                <li><a href="./books/home-sweet-home">Home Sweet Home</a></li>
+                <li><a href="./books/the-watcher-in-the-woods">The Watcher in the Woods</a></li>
+                <li><a href="./books/escape-from-the-hill">Escape from the Hill</a></li>
+              </ul>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a onclick="">Newsletter Signup</a></li>
+          </ul>
+          <button
+              class="hamburger hamburger--spin"
+              id="navBtn"
+              type="button"
+              aria-controls="navCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+              <span class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </span>
+            </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section>
+
+    things
+  </section>
+
 </body>
 </html>

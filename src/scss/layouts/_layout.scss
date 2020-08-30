@@ -1,1 +1,14 @@
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
 
+  @media(min-width: 400px) {
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+section {
+  margin-top: 5em;
+}
