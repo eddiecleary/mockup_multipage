@@ -1,0 +1,41 @@
+/*
+
+Styling for Hero Slider Start
+
+*/
+$themeColor: $secondary;
+
+@import "node_modules/swiper/swiper";
+@import "node_modules/swiper/components/navigation/navigation";
+@import "node_modules/swiper/components/pagination/pagination";
+
+:root {
+  --swiper-navigation-size: 30px;
+}
+
+
+.swiper-container {
+  max-width: 350px;
+
+  @media (min-width: 600px) {
+    max-width: 95%;
+  }
+
+  .swiper-wrapper {
+
+    .swiper-slide {
+      max-width: 100%;
+
+      img {
+        max-width: 180px;
+      }
+    }
+  }
+}
+
+
+/*
+
+Styling for Hero Slider End
+
+*/

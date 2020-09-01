@@ -12,8 +12,13 @@ const gulp = require("gulp"),
   svgSymbols = require('gulp-svg-symbols'),
   rollup = require('gulp-better-rollup'),
   babel = require('rollup-plugin-babel'),
+  commonjs = require('rollup-plugin-commonjs'),
   resolve = require('rollup-plugin-node-resolve'),
-  commonjs = require('rollup-plugin-commonjs');
+  terser = require('rollup-plugin-terser'),
+  sourcemaps = require('gulp-sourcemaps'),
+  minify = require('gulp-babel-minify');
+
+  // var pump = require('pump');
 
 const paths = {
   styles: {
@@ -21,7 +26,7 @@ const paths = {
     dest: "./dist/css/",
   },
   scripts: {
-    src: "./src/js/*.js",
+    src: "./src/js/**/*.js",
     dest: "./dist/js/",
   },
   icons: {
@@ -56,12 +61,23 @@ function styles() {
   );
 }
 
+// gulp.task('uglify-error-debugging', function (cb) {
+//   pump([
+//     gulp.src(paths.scripts.src),
+//     uglify(),
+//     gulp.dest('./')
+//   ], cb);
+// });
+
 function scripts() {
   return (
     gulp
       .src(paths.scripts.src)
       .pipe(plumberNotifier())
-      .pipe(rollup({ plugins: [babel(), resolve(), commonjs()]}, 'umd'))
+      .pipe(sourcemaps.init())
+      .pipe(rollup({ plugins: [babel(), resolve(), commonjs()]}, 'umd'),)
+      .pipe(minify({ mangle: {keepClassName:true}}))
+      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(paths.scripts.dest))
       .pipe(liveReload())
   );

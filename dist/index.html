@@ -6,6 +6,8 @@
   <title>Multipage Example</title>
   <link rel="stylesheet" href="./css/styles.min.css">
   <script src="./js/main.js" defer></script>
+  <script src="./js/vendor/tiny-slider.js" defer></script>
+  <script src="./js/vendor/swiper.js" defer></script>
 </head>
 <body>
 
@@ -51,37 +53,158 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Carl Michaels Is A <span class="highlight">Thriller</span> Author</h1>
-      <p>"When the extraordinary is ordinary, life can start..."</p>
-      <div class="slide-outer">
-        <div id="custom-controls" class="controls"> 
-          <li class="prev" data-controls="prev" aria-controls="custom"><svg width="29" height="51" viewBox="0 0 29 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26.5 48.5L2.5 27L26.5 3" stroke="#FFF2D9" stroke-width="3" stroke-linecap="square"/>
-            </svg></li>
-          <li class="next" data-controls="next" aria-controls="custom"><svg width="30" height="51" viewBox="0 0 30 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3L27 24.5L3 48.5" stroke="#FFF2D9" stroke-width="3" stroke-linecap="square"/>
-            </svg>
-            </li>
-        </div>
-        <div class="my-slider">
-          <div><img src="./images/home1.jpg" alt="" /></div>
-          <div><img src="./images/home2.jpg" alt="" /></div>
-          <div><img src="./images/home3.jpg" alt="" /></div>
-          <div><img src="./images/home4.jpg" alt="" /></div>
-          <div><img src="./images/home5.jpg" alt="" /></div>
+  <!-- Main Start -->
+  <main id="index"> 
+    
+    <section class="hero">
+      <div class="container">
+        <h1>Carl Michaels Is A <span class="highlight"><em>Thriller</em></span> Author</h1>
+        <p>"When the extraordinary is ordinary, life can start..."</p>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/escape-sm.jpg" alt="Escape From the Hill book cover, smokey forest in black and white" /></div>
+            <div class="swiper-slide"><img src="./images/jamais-sm.jpg" alt="Jamais Vu book cover, young man with hands together black background" /></div>
+            <div class="swiper-slide"><img src="./images/secrets-sm.jpg" alt="Secrets book cover, a woman wearing a blind fold" /></div>
+            <div class="swiper-slide"><img src="./images/sweethome-sm.jpg" alt="Home Sweet Home book cover, a house suspended on stilts above a lake at night" /></div>
+            <div class="swiper-slide"><img src="./images/watcher-sm.jpg" alt="The Watcher in the Woods book cover, smokey forest during the day" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="btn-wrap">
         <a href="#" class="btn">Shop Now</a>
         <a href="#" class="btn btn-link">Learn More<svg width="30" height="51" viewBox="0 0 30 51" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 3L27 24.5L3 48.5" stroke="#FFF2D9" stroke-width="3" stroke-linecap="square"/>
-          </svg></a>
+        </svg></a>
       </div>
-
+      
     </div>
   </section>
 
+  <section class="testimonials">
+    <div class="container">
+      <h2>#1 Amazon Best-Selling Author</h2>
+      <blockquote>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet commodi sint, ad labore dignissimos.
+        </p>
+        <cite>Vicky Mortenson</cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet commodi sint, ad labore dignissimos.
+        </p>
+        <cite>Steve Jones</cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet commodi sint, ad labore dignissimos.
+        </p>
+        <cite>Gareth Hooper</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="books">
+    <div class="container">
+      <article>
+        <figure>
+          <img src="./images/escape-sm.jpg" alt="Escape From the Hill book cover, smokey forest in black and white">
+          <figcaption>Escape From the Hill by Carl Michaels</figcaption>
+        </figure>
+        <h4>Escape From the Hill</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum neque neque, ut luctus nisl condimentum id. Curabitur sapien augue, tempor in condimentum id, porttitor eget leo. Donec molestie sem leo, faucibus finibus nulla euismod in. Etiam quis nisi egestas, semper eros sagittis.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+      <article>
+        <figure>
+          <img src="./images/jamais-sm.jpg" alt="Jamais Vu book cover, young man with hands together black background">
+          <figcaption>Jamais Vu by Carl Michaels</figcaption>
+        </figure>
+        <h4>Jamais Vu</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum neque neque, ut luctus nisl condimentum id. Curabitur sapien augue, tempor in condimentum id, porttitor eget leo. Donec molestie sem leo, faucibus finibus nulla euismod in. Etiam quis nisi egestas, semper eros sagittis.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+      <article>
+        <figure>
+          <img src="./images/secrets-sm.jpg" alt="Secrets book cover, a woman wearing a blind fold">
+          <figcaption>Secrets by Carl Michaels</figcaption>
+        </figure>
+        <h4>Secrets</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum neque neque, ut luctus nisl condimentum id. Curabitur sapien augue, tempor in condimentum id, porttitor eget leo. Donec molestie sem leo, faucibus finibus nulla euismod in. Etiam quis nisi egestas, semper eros sagittis.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+      <article>
+        <figure>
+          <img src="./images/sweethome-sm.jpg" alt="Home Sweet Home book cover, a house suspended on stilts above a lake at night">
+          <figcaption>Home Sweet Home by Carl Michaels</figcaption>
+        </figure>
+        <h4>Home Sweet Home</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum neque neque, ut luctus nisl condimentum id. Curabitur sapien augue, tempor in condimentum id, porttitor eget leo. Donec molestie sem leo, faucibus finibus nulla euismod in. Etiam quis nisi egestas, semper eros sagittis.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+      <article>
+        <figure>
+          <img src="./images/watcher-sm.jpg" alt="The Watcher in the Woods book cover, smokey forest during the day">
+          <figcaption>The Watcher in the Woods by Carl Michaels</figcaption>
+        </figure>
+        <h4>The Watcher in the Woods</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum neque neque, ut luctus nisl condimentum id. Curabitur sapien augue, tempor in condimentum id, porttitor eget leo. Donec molestie sem leo, faucibus finibus nulla euismod in. Etiam quis nisi egestas, semper eros sagittis.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h3>Visit My Amazon Store</h3>
+      <a href="#" class="btn">Visit Store</a>
+      <figure>
+        <picture>
+          <source media="(min-width: 400px)" srcset="./images/cta-md.jpg">
+          <img src="./images/cta-sm.jpeg" alt="All 5 book covers of Carl Michaels in an artistic pyramid shape">
+        </picture>
+        <figcaption>Jamais Vu Books</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  </main>
+  <!-- Main End -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-top">
+        <a class="grid-logo" href="./">
+          <img src="./images/logo.svg" alt="Carl Michaels Logo">
+        </a>
+        <a class="btn grid-about" href="#" class="btn">About Me</a>
+        <a class="btn grid-news" href="#" class="btn">Newsletter Signup</a>
+        <a class="btn grid-contact" href="#" class="btn">Contact</a>
+        <div class="grid-social">
+          <img src="./images/facebook.svg" alt="Facebook Logo">   
+          <img src="./images/instagram.svg" alt="Instagram Logo">   
+          <img src="./images/twitter.svg" alt="Twitter Logo">   
+        </div>
+      </div>
+      <div class="wrap-bottom">
+        <h5><a href="#">Books List</a></h5>
+        <ul>
+          <li><a href="#">Escape From the Hill</a></li>
+          <li><a href="#">The Watcher in the Woods</a></li>
+          <li><a href="#">Jamais Vu</a></li>
+          <li><a href="#">Secrets</a></li>
+          <li><a href="#">Home Sweet Home</a></li>
+        </ul>
+        <p>&copy; Carl Michaels <span class="year">2020</span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  
 </body>
 </html>
