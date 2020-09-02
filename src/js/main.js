@@ -7,16 +7,28 @@ const modal = document.getElementById('modal');
 const scrollWrap = document.querySelector('.scroll-wrap');
 const scrollStage = document.querySelector('.scroll-stage');
 
+const lgBreakpoint = window.matchMedia("(min-width: 992px)");
+
 // Horizontal scroll on books section
 scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
 
 window.addEventListener('scroll', () => {
   const sticky = document.querySelector('.sticky');
-  scrollStage.style.transform = `translateX(-${sticky.offsetTop}px)`;
+
+  if (lgBreakpoint.matches) {
+    scrollStage.style.transform = `translateX(-${sticky.offsetTop}px)`;
+  } else {
+    scrollStage.style.transform = 'initial';
+  }
 });
 
 window.addEventListener('resize', () => {
-  scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
+
+  if (lgBreakpoint.matches) {
+    scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
+  } else {
+    scrollWrap.style.height = 'auto';
+  }
 });
 
 function calcDynamicHeight(ref) {
