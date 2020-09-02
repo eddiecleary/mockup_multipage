@@ -1029,23 +1029,42 @@ button.btn {
   transition: all 0.65s ease;
 }
 
-.header .container .wrap nav > ul#nav::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .header .container .wrap nav > ul#nav.expanded {
   opacity: 1;
   pointer-events: all;
+}
+
+@media (min-width: 992px) {
+  .header .container .wrap nav > ul#nav {
+    opacity: 1;
+    pointer-events: all;
+    border: 0;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .header .container .wrap nav > ul#nav li {
   padding: 0.5em 0;
 }
 
+@media (min-width: 992px) {
+  .header .container .wrap nav > ul#nav li {
+    padding: 0 0.5em;
+  }
+}
+
 .header .container .wrap nav > ul#nav li.sub-menu-hover a.wrap-svg {
   position: relative;
+}
+
+@media (min-width: 992px) {
+  .header .container .wrap nav > ul#nav li.sub-menu-hover a.wrap-svg {
+    margin-right: 0.7em;
+  }
 }
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover a.wrap-svg svg {
@@ -1056,6 +1075,40 @@ button.btn {
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover ul.sub-menu {
   max-height: 0px;
+}
+
+@media (min-width: 992px) {
+  .header .container .wrap nav > ul#nav li.sub-menu-hover ul.sub-menu {
+    width: 100%;
+    position: absolute;
+    max-height: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 1.5em;
+    background-color: #241403;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 1em;
+    opacity: 0;
+    pointer-events: all;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .header .container .wrap nav > ul#nav li.sub-menu-hover ul.sub-menu li {
+    padding-left: 0;
+  }
+  .header .container .wrap nav > ul#nav li.sub-menu-hover ul.sub-menu li:not(:last-of-type) {
+    padding-bottom: 1em;
+  }
 }
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover.expanded a.wrap-svg {
@@ -1071,6 +1124,13 @@ button.btn {
   max-height: 230px;
 }
 
+@media (min-width: 992px) {
+  .header .container .wrap nav > ul#nav li.sub-menu-hover:hover ul.sub-menu {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
 .header .container .wrap nav > ul#nav li a {
   color: #fff2d9;
 }
@@ -1079,11 +1139,29 @@ button.btn {
   color: #a90d0d;
 }
 
+.header .container .wrap nav > ul#nav li button.modalTrigger {
+  background-color: transparent;
+  border: 0;
+  color: #fff2d9;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.header .container .wrap nav > ul#nav li button.modalTrigger:hover {
+  color: #a90d0d;
+}
+
 .header .container .wrap nav > ul#nav ul.sub-menu {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease;
+}
+
+@media (min-width: 992px) {
+  .header .container .wrap nav #navBtn {
+    display: none;
+  }
 }
 
 .header .container .wrap nav #navBtn.hamburger.is-active .hamburger-inner,
@@ -1245,95 +1323,185 @@ section {
   margin-top: 2em;
 }
 
-.testimonials .container blockquote {
+@media (min-width: 992px) {
+  .testimonials .container .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
+.testimonials .container .wrap blockquote {
   background-color: #fff2d9;
   color: #241403;
   padding: 2em;
   padding-bottom: 1em;
   border-radius: 5px;
   position: relative;
-  max-width: 280px;
   margin-top: 2em;
+  max-width: 275px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 600px) {
-  .testimonials .container blockquote {
+@media (min-width: 500px) {
+  .testimonials .container .wrap blockquote {
     max-width: 350px;
   }
 }
 
-@media (min-width: 600px) {
-  .testimonials .container blockquote p {
-    margin-right: -1.2em;
-  }
-}
-
-.testimonials .container blockquote p::before {
+.testimonials .container .wrap blockquote::before {
   font-family: Georgia, serif;
   position: absolute;
   font-size: 3.7em;
   line-height: 1;
-  top: 0.3em;
+  top: 0.2em;
   left: 0.2em;
   content: "\201C";
-  color: #241403;
 }
 
-.testimonials .container blockquote p::after {
+@media (min-width: 992px) {
+  .testimonials .container .wrap blockquote::before {
+    left: 0.5em;
+  }
+}
+
+.testimonials .container .wrap blockquote::after {
   font-family: Georgia, serif;
   position: absolute;
   font-size: 3.7em;
   float: right;
   line-height: 1;
-  right: 0.5em;
-  bottom: 0em;
+  right: 0.2em;
+  bottom: -0.2em;
   content: "\201D";
-  color: #241403;
 }
 
-@media (min-width: 600px) {
-  .testimonials .container blockquote p::after {
-    right: 0.8em;
+@media (min-width: 500px) {
+  .testimonials .container .wrap blockquote::after {
+    right: 0.5em;
   }
 }
 
-.testimonials .container blockquote cite {
+@media (min-width: 992px) {
+  .testimonials .container .wrap blockquote::after {
+    right: 0.8em;
+    top: 1.8em;
+  }
+}
+
+@media (min-width: 600px) {
+  .testimonials .container .wrap blockquote p {
+    margin-right: -10px;
+  }
+}
+
+.testimonials .container .wrap blockquote cite {
   display: block;
   margin-top: 0.7em;
   margin-right: 0.5em;
 }
 
-.testimonials .container blockquote cite::before {
+.testimonials .container .wrap blockquote cite::before {
   content: '\2014';
   margin-right: 0.5em;
 }
 
-.books .container article:not(:last-of-type) {
+.books-scroll .container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.books-scroll .container .scroll-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.books-scroll .container .scroll-wrap .sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.books-scroll .container .scroll-wrap .sticky .scroll-stage {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 150px;
+}
+
+@media (min-width: 992px) {
+  .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article {
+    height: 100px;
+    width: 900px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+  }
+}
+
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article:not(:last-of-type) {
   margin-bottom: 6em;
 }
 
-.books .container article figure img {
-  max-width: 200px;
+@media (min-width: 992px) {
+  .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article:not(:last-of-type) {
+    margin-bottom: 0;
+  }
 }
 
-.books .container article figure figcaption {
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure img {
+  max-width: 250px;
+}
+
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure figcaption {
   display: none;
 }
 
-.books .container article h4 {
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article h4 {
   margin: 1em 0;
 }
 
-.books .container article p {
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article p {
   text-align: left;
   margin: 0 auto;
   line-height: 1.6;
   max-width: 350px;
 }
 
-.books .container article a.btn {
+@media (min-width: 992px) {
+  .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article p {
+    max-width: 450px;
+    text-align: center;
+  }
+}
+
+.books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article a.btn {
   margin-top: 1.75em;
 }
 

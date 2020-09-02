@@ -44,25 +44,34 @@
           pointer-events: none;
           transition: all 0.65s ease;
 
-
-          &::after {
-            content: '';
-            display: block;
-            clear: both;
-          }
-
           &.expanded {
             opacity: 1;
             pointer-events: all;
           }
 
+          @media (min-width: 992px) {
+            opacity: 1;
+            pointer-events: all;
+            border: 0;
+            position: relative;
+            flex-direction: row;
+          }
+
           li {
             padding: 0.5em 0;
+
+            @media(min-width: 992px) {
+              padding: 0 0.5em;
+            }
 
             &.sub-menu-hover {
 
               a.wrap-svg {
                 position: relative;
+
+                @media (min-width: 992px) {
+                  margin-right: 0.7em;
+                }
 
                 svg {
                   position: absolute;
@@ -73,6 +82,30 @@
 
               ul.sub-menu {
                 max-height: 0px;
+
+                @media (min-width: 992px) {
+                  width: 100%;
+                  position: absolute;
+                  max-height: 280px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding-top: 1.5em;
+                  background-color: $primary;
+                  width: max-content;
+                  padding: 1em;
+                  opacity: 0;
+                  pointer-events: all;
+                  transition: all 0.5s ease;
+
+                  li {
+                    padding-left: 0;
+                    
+                    &:not(:last-of-type) {
+                      padding-bottom: 1em;
+                    }
+                  }
+                }
               }
 
               &.expanded {
@@ -90,10 +123,33 @@
                   max-height: 230px;
                 }
               }
+
+              &:hover {
+
+                @media(min-width: 992px) {
+
+                  ul.sub-menu {
+                    opacity: 1;
+                    pointer-events: all;
+                  }
+                }
+              }
             }
 
             a {
               color: $secondary;
+
+              &:hover {
+                color: $tertiary;
+              }
+            }
+
+            button.modalTrigger {
+              background-color: transparent;
+              border: 0;
+              color: $secondary;
+              font-family: inherit;
+              cursor: pointer;
 
               &:hover {
                 color: $tertiary;
@@ -120,6 +176,13 @@
             a {
               
             }
+          }
+        }
+
+        #navBtn {
+
+          @media (min-width: 992px) {
+            display: none;
           }
         }
         

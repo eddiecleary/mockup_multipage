@@ -1,6 +1,6 @@
-import Swiper, {Navigation, Pagination} from 'swiper';
+import Swiper, {Navigation, Pagination, Autoplay} from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 const swiper = new Swiper('.swiper-container', {
   loop: true,
@@ -16,5 +16,6 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 20
     },
-  }
+  },
+  autoplay: true
 });
