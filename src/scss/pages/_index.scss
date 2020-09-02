@@ -34,6 +34,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 50px;
       }
 
       blockquote {
@@ -50,6 +51,10 @@
   
         @media (min-width: 500px) {
           max-width: 350px;
+        }
+
+        @media (min-width: 992px) {
+
         }
   
         &::before {
@@ -153,6 +158,7 @@
               justify-content: flex-start;
               align-items: flex-start;
               padding-left: 150px;
+              margin-top: 150px;
             }
 
             article {
@@ -227,13 +233,13 @@
 
       img {
         margin-top: 1em;
+        max-width: 900px;
       }
 
       figcaption {
         display: none;
       }
     }
-
   }
 }
 

@@ -16,9 +16,23 @@ $themeColor: $secondary;
 
 .swiper-container {
   max-width: 350px;
+  padding: 2em 0;
 
   @media (min-width: 600px) {
     max-width: 95%;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 913px;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: $tertiary;
+  }
+
+  .swiper-pagination-bullet {
+    border: 1.5px solid $secondary;
   }
 
   .swiper-wrapper {

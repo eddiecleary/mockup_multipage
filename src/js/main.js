@@ -8,6 +8,7 @@ const scrollWrap = document.querySelector('.scroll-wrap');
 const scrollStage = document.querySelector('.scroll-stage');
 
 const lgBreakpoint = window.matchMedia("(min-width: 992px)");
+const xlBreakpoint = window.matchMedia("(min-width: 1300px)");
 
 // Horizontal scroll on books section
 scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
@@ -16,6 +17,7 @@ window.addEventListener('scroll', () => {
   const sticky = document.querySelector('.sticky');
 
   if (lgBreakpoint.matches) {
+    // scrollStage.style.transform = `translateX(-${sticky.offsetTop}px)`;
     scrollStage.style.transform = `translateX(-${sticky.offsetTop}px)`;
   } else {
     scrollStage.style.transform = 'initial';
@@ -35,15 +37,20 @@ function calcDynamicHeight(ref) {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
   const objectWidth = ref.scrollWidth;
-  return objectWidth - vw + vh + 550;
+
+  if (xlBreakpoint.matches) {
+    return objectWidth - vw + vh + 1100;
+  } else if (lgBreakpoint.matches) {
+    return objectWidth - vw + vh + 100;
+  }
 }
 
 // Open Nav from Hamburger
 navBtn.addEventListener('click', function(){
 
   if (!nav.classList.contains('expanded')) {
-    nav.classList.toggle('expanded');
-    navBtn.classList.toggle('is-active');
+    nav.classList.add('expanded');
+    navBtn.classList.add('is-active');
 
     subMenu.addEventListener('mouseover', openSubMenu, {
       once: true
@@ -81,9 +88,22 @@ document.addEventListener('keydown', function(e) {
 
 // Close menu + reset hamburger to original state
 function closeMenu() {
-  subMenu.classList.remove('expanded');
-  nav.classList.remove('expanded');
-  navBtn.classList.remove('is-active');
+
+  if(nav.classList.contains('expanded')) {
+    nav.style.opacity = "0";
+    nav.style.pointerEvents = 'none';
+    navBtn.classList.remove('is-active');
+    subMenu.classList.remove('expanded');
+    
+    setTimeout(function() {
+      nav.classList.remove('expanded');
+      nav.style.opacity = "";
+      nav.style.pointerEvents = '';
+    }, 650);
+  }
+  // subMenu.classList.remove('expanded');
+  // nav.classList.remove('expanded');
+  // navBtn.classList.remove('is-active');
 }
 
 function toggleModal() {

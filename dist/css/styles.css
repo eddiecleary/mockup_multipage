@@ -698,12 +698,28 @@ button.swiper-pagination-bullet {
 
 .swiper-container {
   max-width: 350px;
+  padding: 2em 0;
 }
 
 @media (min-width: 600px) {
   .swiper-container {
     max-width: 95%;
   }
+}
+
+@media (min-width: 992px) {
+  .swiper-container {
+    max-width: 913px;
+  }
+}
+
+.swiper-container .swiper-button-next:hover,
+.swiper-container .swiper-button-prev:hover {
+  color: #a90d0d;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  border: 1.5px solid #fff2d9;
 }
 
 .swiper-container .swiper-wrapper .swiper-slide {
@@ -1025,13 +1041,13 @@ button.btn {
   z-index: 10000;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.65s ease;
-  transition: all 0.65s ease;
 }
 
 .header .container .wrap nav > ul#nav.expanded {
   opacity: 1;
   pointer-events: all;
+  -webkit-transition: opacity 0.65s ease;
+  transition: opacity 0.65s ease;
 }
 
 @media (min-width: 992px) {
@@ -1332,6 +1348,7 @@ section {
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    gap: 50px;
   }
 }
 
@@ -1462,6 +1479,7 @@ section {
     -ms-flex-align: start;
     align-items: flex-start;
     padding-left: 150px;
+    margin-top: 150px;
   }
 }
 
@@ -1521,6 +1539,7 @@ section {
 
 .cta .container figure img {
   margin-top: 1em;
+  max-width: 900px;
 }
 
 .cta .container figure figcaption {
