@@ -731,6 +731,12 @@ Styling for Hero Slider End
   color: #fff2d9;
 }
 
+button.btn {
+  border: 0;
+  font-family: 'EB Garamond', serif;
+  cursor: pointer;
+}
+
 .btn-link {
   background-color: transparent;
   position: relative;
@@ -896,6 +902,77 @@ Styling for Hero Slider End
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.modal-outer {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 105;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal-outer .modal-inner {
+  background-color: #241403;
+  padding: 3em;
+  border-radius: 8px;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal-outer .modal-inner p {
+  padding: 1.3em 0;
+}
+
+.modal-outer .modal-inner form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.modal-outer .modal-inner form input {
+  padding: 1em;
+  background-color: #241403;
+  border: 2px solid #fff2d9;
+  border-radius: 3px;
+  color: #fff2d9;
+  width: 100%;
+  font-family: inherit;
+}
+
+.modal-outer .modal-inner form button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.modal-outer.shown {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-outer.shown .modal-inner {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
 .header {
   padding-top: 1em;
   border-bottom: 5px solid #fff2d9;
@@ -981,16 +1058,16 @@ Styling for Hero Slider End
   max-height: 0px;
 }
 
-.header .container .wrap nav > ul#nav li.sub-menu-hover:hover a.wrap-svg {
+.header .container .wrap nav > ul#nav li.sub-menu-hover.expanded a.wrap-svg {
   color: #a90d0d;
 }
 
-.header .container .wrap nav > ul#nav li.sub-menu-hover:hover a.wrap-svg svg {
+.header .container .wrap nav > ul#nav li.sub-menu-hover.expanded a.wrap-svg svg {
   bottom: 0%;
   color: #a90d0d;
 }
 
-.header .container .wrap nav > ul#nav li.sub-menu-hover:hover ul.sub-menu {
+.header .container .wrap nav > ul#nav li.sub-menu-hover.expanded ul.sub-menu {
   max-height: 230px;
 }
 
