@@ -151,6 +151,8 @@
               color: $secondary;
               font-family: inherit;
               cursor: pointer;
+              padding: 0.5em;
+              position: relative;
 
               &:hover {
                 color: $tertiary;

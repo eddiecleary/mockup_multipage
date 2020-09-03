@@ -68,6 +68,5 @@ function closeMenu() {
 }
 
 function toggleModal() {
-  console.log('clicked');
   modal.classList.toggle('shown');
 }
