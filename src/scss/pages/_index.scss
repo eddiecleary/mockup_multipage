@@ -1,245 +1,247 @@
-.hero {
+#index {
 
-  .container {
+  .hero {
 
-    h1 {
+    .container {
 
-    }
+      h1 {
 
-    p {
-      margin-top: 1em;
-    }
-
-    .slide-outer {
-
-    }
-
-    .btn-wrap {
-      margin-top: 2em;
-    }
-  }
-}
-
-.testimonials {
-  
-  .container {
-
-    h2 {
-
-    }
-
-    .wrap {
-
-      @media (min-width: 992px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 50px;
       }
 
-      blockquote {
-        background-color: $secondary;
-        color: $primary;
-        padding: 2em;
-        padding-bottom: 1em;
-        border-radius: 5px;
-        position: relative;
-        margin-top: 2em;
-        max-width: 275px;
-        margin-left: auto;
-        margin-right: auto;
-  
-        @media (min-width: 500px) {
-          max-width: 350px;
-        }
-
-        @media (min-width: 992px) {
-
-        }
-  
-        &::before {
-          font-family: Georgia, serif;
-          position: absolute;
-          font-size: 3.7em;
-          line-height: 1;
-          top: 0.2em;
-          left: 0.2em;
-          content: "\201C";
-  
-          @media (min-width: 992px) {
-            left: 0.5em;
-          }
-        }
-  
-        &::after {
-          font-family: Georgia, serif;
-          position: absolute;
-          font-size: 3.7em;
-          float: right;
-          line-height: 1;
-          right: 0.2em;
-          bottom: -0.2em;
-          content: "\201D";
-  
-          @media (min-width: 500px) {
-            right: 0.5em;
-          }
-  
-          @media (min-width: 992px) {
-            right: 0.8em;
-            top: 1.8em;
-          }
-        }
-  
-        
-        p {
-          @media (min-width: 600px) {
-            margin-right: -10px;
-          }
-        }
-  
-        cite {
-          display: block;
-          margin-top: 0.7em;
-          margin-right: 0.5em;
-  
-          &::before {
-            content: '\2014';
-            margin-right: 0.5em;
-          }
-        }
-      }
-    }
-  }
-}
-
-.books-scroll {
-
-  .container {
-    
-    @media (min-width: 992px) {
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
-    }
-
-    .scroll-wrap {
-
-      @media (min-width: 992px) {
-        width: 100%;
-        position: relative;
-      }
-
-      .sticky {
-
-        @media (min-width: 992px) {
-          position: sticky;
-          top: 0;
-          height: 100vh;
-          width: 100%;
-        }
-
-        .scroll-stage {
-        
-          @media (min-width: 992px) {
-            position: absolute;
-            height: 100%;
-            will-change: transform;
-            overflow: hidden;
-          }
-
-          .cards {
-            
-            @media (min-width: 992px) {
-              position: relative;
-              height: 100%;
-              display: flex;
-              flex-flow: row nowrap;
-              justify-content: flex-start;
-              align-items: flex-start;
-              padding-left: 150px;
-              margin-top: 150px;
-            }
-
-            article {
-
-              @media (min-width: 992px) {
-                height: 100px;
-                width: 900px;
-                // margin-right: 75px;
-                flex-shrink: 0;
-                position: relative;
-              }
-
-              &:not(:last-of-type) {
-                margin-bottom: 6em;
-
-                @media (min-width: 992px) {
-                  margin-bottom: 0;
-                }
-              }
-
-              figure {
-
-                img {
-                  max-width: 250px;
-                }
-
-                figcaption {
-                  display: none;
-                }
-              }
-
-              h4 {
-                margin: 1em 0;
-              }
-
-              p {
-                text-align: left;
-                margin: 0 auto;
-                line-height: 1.6;
-                max-width: 350px;
-
-                @media (min-width: 992px) {
-                  max-width: 450px;
-                  text-align: center;
-                }
-              }
-
-              a.btn {
-                margin-top: 1.75em;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.cta {
-
-  .container {
-
-    h3 {
-
-    }
-
-    a {
-      margin: 2em 0;
-    }
-
-    figure {
-
-      img {
+      p {
         margin-top: 1em;
-        max-width: 900px;
       }
 
-      figcaption {
-        display: none;
+      .slide-outer {
+
+      }
+
+      .btn-wrap {
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .testimonials {
+    
+    .container {
+
+      h2 {
+
+      }
+
+      .wrap {
+
+        @media (min-width: 992px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          gap: 50px;
+        }
+
+        blockquote {
+          background-color: $secondary;
+          color: $primary;
+          padding: 2em;
+          padding-bottom: 1em;
+          border-radius: 5px;
+          position: relative;
+          margin-top: 2em;
+          max-width: 275px;
+          margin-left: auto;
+          margin-right: auto;
+    
+          @media (min-width: 500px) {
+            max-width: 350px;
+          }
+
+          @media (min-width: 992px) {
+
+          }
+    
+          &::before {
+            font-family: Georgia, serif;
+            position: absolute;
+            font-size: 3.7em;
+            line-height: 1;
+            top: 0.2em;
+            left: 0.2em;
+            content: "\201C";
+    
+            @media (min-width: 992px) {
+              left: 0.5em;
+            }
+          }
+    
+          &::after {
+            font-family: Georgia, serif;
+            position: absolute;
+            font-size: 3.7em;
+            float: right;
+            line-height: 1;
+            right: 0.2em;
+            bottom: -0.2em;
+            content: "\201D";
+    
+            @media (min-width: 500px) {
+              right: 0.5em;
+            }
+    
+            @media (min-width: 992px) {
+              right: 0.8em;
+              top: 1.8em;
+            }
+          }
+    
+          
+          p {
+            @media (min-width: 600px) {
+              margin-right: -10px;
+            }
+          }
+    
+          cite {
+            display: block;
+            margin-top: 0.7em;
+            margin-right: 0.5em;
+    
+            &::before {
+              content: '\2014';
+              margin-right: 0.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .books-scroll {
+
+    .container {
+      
+      @media (min-width: 992px) {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      .scroll-wrap {
+
+        @media (min-width: 992px) {
+          width: 100%;
+          position: relative;
+        }
+
+        .sticky {
+
+          @media (min-width: 992px) {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+          }
+
+          .scroll-stage {
+          
+            @media (min-width: 992px) {
+              position: absolute;
+              height: 100%;
+              will-change: transform;
+              overflow: hidden;
+            }
+
+            .cards {
+              
+              @media (min-width: 992px) {
+                position: relative;
+                height: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-left: 150px;
+                margin-top: 150px;
+              }
+
+              article {
+
+                @media (min-width: 992px) {
+                  height: 100px;
+                  width: 900px;
+                  // margin-right: 75px;
+                  flex-shrink: 0;
+                  position: relative;
+                }
+
+                &:not(:last-of-type) {
+                  margin-bottom: 6em;
+
+                  @media (min-width: 992px) {
+                    margin-bottom: 0;
+                  }
+                }
+
+                figure {
+
+                  img {
+                    max-width: 250px;
+                  }
+
+                  figcaption {
+                    display: none;
+                  }
+                }
+
+                h4 {
+                  margin: 1em 0;
+                }
+
+                p {
+                  text-align: left;
+                  margin: 0 auto;
+                  line-height: 1.6;
+                  max-width: 350px;
+
+                  @media (min-width: 992px) {
+                    max-width: 450px;
+                    text-align: center;
+                  }
+                }
+
+                a.btn {
+                  margin-top: 1.75em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cta {
+
+    .container {
+
+      h3 {
+
+      }
+
+      a {
+        margin: 2em 0;
+      }
+
+      figure {
+
+        img {
+          margin-top: 1em;
+          max-width: 900px;
+        }
+
+        figcaption {
+          display: none;
+        }
       }
     }
   }
 }
-

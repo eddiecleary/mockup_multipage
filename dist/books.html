@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multipage Example</title>
+  <link rel="stylesheet" href="./css/styles.min.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="wrap">
+        <a href="./">
+          <img src="./images/logo.svg" alt="Carl Michaels Logo">
+        </a>
+        <nav>
+          <ul id="nav">
+            <li class="sub-menu-hover hidden" id="dropdown-trigger" data-dropdown-trigger><a class="wrap-svg" href="./books.html">Books
+                <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7.5 7L14 1" stroke="#a90d0d" stroke-width="2.75" />
+                </svg>
+                </a>
+              <ul class="sub-menu">
+                <li><a href="./books/jamais-vu">Jamais Vu</a></li>
+                <li><a href="./books/secrets">Secrets</a></li>
+                <li><a href="./books/home-sweet-home">Home Sweet Home</a></li>
+                <li><a href="./books/the-watcher-in-the-woods">The Watcher in the Woods</a></li>
+                <li><a href="./books/escape-from-the-hill">Escape from the Hill</a></li>
+              </ul>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><button class="modalTrigger" data-modal-trigger>Newsletter Signup</button></li>
+          </ul>
+          <button
+              class="hamburger hamburger--spin"
+              id="navBtn"
+              type="button"
+              aria-controls="navCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+              <span class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </span>
+            </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Start -->
+  <main id="books">
+    
+    <section class="timeline">
+      <div class="container">
+        <h1>Books & Timeline</h1>
+        <div class="wrap">
+          <article>
+            <figure>
+              <img src="./images/escape-sm.jpg" alt="">
+              <figcaption>Escape From the Hill by Carl Michaels 2013</figcaption>
+            </figure>
+            <div class="timeline-line top">
+              <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="32.5" fill="#A90D0D" stroke="#FFF2D9" stroke-width="9"/>
+              </svg>                
+            </div>
+            <div>
+              <h2>2013</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="./images/watcher-sm.jpg" alt="">
+              <figcaption>The Watcher in the Woods by Carl Michaels 2015</figcaption>
+            </figure>
+            <div class="timeline-line">
+              <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="32.5" fill="#A90D0D" stroke="#FFF2D9" stroke-width="9"/>
+              </svg>                
+            </div>
+            <div>
+              <h2>2015</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="./images/sweethome-sm.jpg" alt="">
+              <figcaption>Home Sweet Home by Carl Michaels 2017</figcaption>
+            </figure>
+            <div class="timeline-line">
+              <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="32.5" fill="#A90D0D" stroke="#FFF2D9" stroke-width="9"/>
+              </svg>                
+            </div>
+            <div>
+              <h2>2017</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="./images/secrets-sm.jpg" alt="">
+              <figcaption>Secrets by Carl Michaels 2018</figcaption>
+            </figure>
+            <div class="timeline-line">
+              <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="32.5" fill="#A90D0D" stroke="#FFF2D9" stroke-width="9"/>
+              </svg>                
+            </div>
+            <div>
+              <h2>2018</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="./images/escape-sm.jpg" alt="">
+              <figcaption>Jamais Vu by Carl Michaels 2020</figcaption>
+            </figure>
+            <div class="timeline-line bottom">
+              <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="32.5" fill="#A90D0D" stroke="#FFF2D9" stroke-width="9"/>
+              </svg>                
+            </div>
+            <div>
+              <h2>2020</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Main End -->
+
+
+  <div class="modal-outer" id="modal">
+    <div class="modal-inner">
+      <h5>Join My Newsletter!</h5>
+      <p>For all the latest updated and news, never spam!</p>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="youremail@here.com">
+        <button type="submit" class="btn">Send Free Updates</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-top">
+        <a class="grid-logo" href="./">
+          <img src="./images/logo.svg" alt="Carl Michaels Logo">
+        </a>
+        <a class="btn grid-about" href="#" class="btn">About Me</a>
+        <button class="btn grid-news modalTrigger" data-modal-trigger>Newsletter Signup</button>
+        <a class="btn grid-contact" href="#" class="btn">Contact</a>
+        <div class="grid-social">
+          <img src="./images/facebook.svg" alt="Facebook Logo">   
+          <img src="./images/instagram.svg" alt="Instagram Logo">   
+          <img src="./images/twitter.svg" alt="Twitter Logo">   
+        </div>
+      </div>
+      <div class="wrap-bottom">
+        <h5><a href="#">Books List</a></h5>
+        <ul>
+          <li><a href="#">Escape From the Hill</a></li>
+          <li><a href="#">The Watcher in the Woods</a></li>
+          <li><a href="#">Jamais Vu</a></li>
+          <li><a href="#">Secrets</a></li>
+          <li><a href="#">Home Sweet Home</a></li>
+        </ul>
+        <p>&copy; Carl Michaels <span class="year">2020</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

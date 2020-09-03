@@ -4,6 +4,8 @@ const navBtn = document.getElementById('navBtn');
 const subMenu = document.getElementById('dropdown-trigger');
 const modalTrigger = document.querySelectorAll('.modalTrigger');
 const modal = document.getElementById('modal');
+const scrollWrap = document.querySelector('.scroll-wrap');
+const scrollStage = document.querySelector('.scroll-stage');
 
 const lgBreakpoint = window.matchMedia("(min-width: 992px)");
 const xlBreakpoint = window.matchMedia("(min-width: 1300px)");

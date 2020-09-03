@@ -11,16 +11,16 @@ footer.footer {
       max-width: 290px;
 
       @media (min-width: 600px) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: min-content;
+        grid-template-columns: repeat(3, fit-content);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
         "logo social social"
-        "news news news"
+        ". news ."
         "about . contact";
         width: 100%;
         max-width: 100%;
         align-items: start;
-        justify-items: center;
+        justify-content: space-between;
 
         .grid-logo {
           grid-area: logo;
@@ -29,7 +29,7 @@ footer.footer {
   
         .grid-social {
           grid-area: social;
-          width: 200px;
+          width: 180px;
           margin-left: auto;
         }
   
@@ -45,7 +45,6 @@ footer.footer {
           grid-area: contact;
         }
       }
-
 
       a {
         display: block;
