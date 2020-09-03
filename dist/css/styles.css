@@ -1438,8 +1438,17 @@ footer.footer .container .wrap-bottom h5 {
   text-decoration: underline;
 }
 
+footer.footer .container .wrap-bottom h5:hover {
+  -webkit-text-decoration-color: #a90d0d;
+  text-decoration-color: #a90d0d;
+}
+
 footer.footer .container .wrap-bottom h5 a {
   color: #fff2d9;
+}
+
+footer.footer .container .wrap-bottom h5 a:hover {
+  color: #a90d0d;
 }
 
 footer.footer .container .wrap-bottom ul {

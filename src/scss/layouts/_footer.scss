@@ -72,8 +72,16 @@ footer.footer {
       h5 {
         text-decoration: underline;
 
+        &:hover {
+          text-decoration-color: $tertiary;
+        }
+
         a {
           color: $secondary;
+
+          &:hover {
+            color: $tertiary;
+          }
         }
       }
 
