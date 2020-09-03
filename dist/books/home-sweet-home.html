@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multipage Example</title>
+  <link rel="stylesheet" href="./../css/styles.min.css">
+  <script src="./../js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="wrap">
+        <a href="./../index.html">
+          <img src="./../images/logo.svg" alt="Carl Michaels Logo">
+        </a>
+        <nav>
+          <ul id="nav">
+            <li class="sub-menu-hover hidden" id="dropdown-trigger" data-dropdown-trigger><a class="wrap-svg" href="./../books.html">Books
+                <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7.5 7L14 1" stroke="#a90d0d" stroke-width="2.75" />
+                </svg>
+                </a>
+              <ul class="sub-menu">
+                <li><a href="./jamais-vu.html">Jamais Vu</a></li>
+                <li><a href="./secrets.html">Secrets</a></li>
+                <li><a href="./home-sweet-home.html">Home Sweet Home</a></li>
+                <li><a href="./the-watcher-in-the-woods.html">The Watcher in the Woods</a></li>
+                <li><a href="./escape-from-the-hill.html">Escape from the Hill</a></li>
+              </ul>
+            </li>
+            <li><a href="./../about.html">About</a></li>
+            <li><a href="./../contact.html">Contact</a></li>
+            <li><button class="modalTrigger" data-modal-trigger>Newsletter Signup</button></li>
+          </ul>
+          <button
+              class="hamburger hamburger--spin"
+              id="navBtn"
+              type="button"
+              aria-controls="navCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+              <span class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </span>
+            </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Start -->
+
+  <main id="book">
+
+    <section class="intro">
+      <div class="container">
+        <div class="wrap">
+          <figure>
+            <img src="./../images/sweethome-sm.jpg" alt="">
+            <figcaption>Home Sweet Home by Carl Michaels 2020</figcaption>
+          </figure>
+          <div class="wrap-col">
+            <h1>Home Sweet Home</h1>
+            <h2 class="h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum justo sapien, ut commodo est pellentesque at. Nullam dictum erat nec erat.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <p><span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum justo sapien, ut commodo est pellentesque at. Nullam dictum erat nec erat luctus, sed tempus nisi ultricies. Ut eu augue commodo, volutpat mi non, sagittis nisi. Phasellus at pulvinar nisl. Quisque aliquet odio non tellus pellentesque aliquet. Vestibulum luctus, diam ullamcorper sagittis porttitor, ex urna tincidunt elit, ut elementum nisi risus at purus. Duis eleifend, nibh et gravida consequat, nibh ligula fermentum ex, ac volutpat lectus tellus in urna. Maecenas vitae tincidunt eros. Mauris non metus non ipsum convallis tempor. Sed posuere mattis nisi. Sed mauris magna, scelerisque eget augue et, sollicitudin tempor turpis. Morbi luctus cursus eleifend. Duis vestibulum enim at lorem laoreet, non volutpat risus dictum. Donec at pellentesque ipsum. Quisque vel tortor elementum libero euismod fringilla.</p>
+        <p>Proin tortor purus, gravida convallis efficitur sit amet, sodales vitae nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor enim nec elit egestas, in pharetra libero feugiat. Sed ornare venenatis risus in pretium. Nam sodales faucibus magna. Etiam auctor arcu vitae elit vestibulum rhoncus. Nam eleifend maximus tellus et finibus. Etiam mollis suscipit quam, et aliquam mi posuere a. Vivamus cursus velit in urna ornare tristique. In egestas, nibh vel tincidunt faucibus, magna justo imperdiet dolor, ullamcorper maximus urna enim eu diam.</p>
+        <div class="art sweet-home">
+          <picture>
+            <source>
+            <img src="./../images/art-sweethome-sm.jpg" alt="">
+          </picture>
+          <span>You're not the only one home...</span>
+        </div>
+        <p>Praesent ultricies ipsum venenatis ultricies consequat. Maecenas finibus hendrerit enim. Pellentesque condimentum auctor turpis, id pellentesque est iaculis sed. Vivamus interdum ante sit amet sem placerat varius. Quisque non maximus eros. Proin et dolor eget eros viverra feugiat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque malesuada nulla ut dui pharetra auctor. Praesent nisi sapien, rhoncus id facilisis et, posuere ac risus. Pellentesque est justo, accumsan quis laoreet ut, pellentesque et felis. Mauris egestas posuere dolor, vel ultrices enim ullamcorper sed. Duis et ligula tempus, maximus dui at, tincidunt dolor. Quisque rutrum posuere rhoncus. Pellentesque at est sed purus iaculis pharetra vitae quis turpis. Donec luctus feugiat consequat. Proin et convallis turpis, ut dictum nisl.</p>
+        <p>In ac rutrum elit, sed pulvinar massa. Proin mauris ipsum, scelerisque sit amet ligula in, vehicula semper velit. Nunc ut ex in erat molestie sollicitudin ut quis nulla. Vestibulum rhoncus pretium odio, id consequat elit rhoncus id. Phasellus non vehicula nunc. Nullam id enim sed neque sollicitudin viverra rutrum in tellus. Aenean at est ipsum. Integer consectetur ipsum sem, a ultricies dolor sollicitudin vitae. Phasellus eget velit sem. Sed tempor nisl ac tortor pretium lobortis.</p>
+        <p>Sed turpis libero, elementum non lacinia placerat, auctor vel massa. Praesent viverra aliquet sem nec fermentum. Duis vehicula metus id sollicitudin hendrerit. Aenean sagittis magna dui, vel ullamcorper leo fringilla at. Quisque dapibus, lacus sed porta tincidunt, nulla arcu volutpat odio, euismod pellentesque arcu justo ac turpis. Integer non bibendum urna, eu ultricies ipsum. Maecenas porttitor augue et tortor vehicula lacinia. Cras quis massa nec eros lacinia accumsan.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="wrap">
+          <blockquote>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet commodi sint, ad labore dignissimos.
+            </p>
+            <cite>Vicky Mortenson</cite>
+          </blockquote>
+          <blockquote>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet commodi sint, ad labore dignissimos.
+            </p>
+            <cite>Steve Jones</cite>
+          </blockquote>
+          <blockquote>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet commodi sint, ad labore dignissimos.
+            </p>
+            <cite>Gareth Hooper</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="more">
+      <div class="container">
+        <h3 class="h2">More Books</h3>
+        <div class="wrap">
+          <a href="./jamais-vu.html"><img src="./../images/jamais-sm.jpg" alt=""></a>
+          <a href="./escape-from-the-hill.html"><img src="./../images/escape-sm.jpg" alt=""></a>
+          <a href="./secrets.html"><img src="./../images/secrets-sm.jpg" alt=""></a>
+          <a href="./the-watcher-in-the-woods.html"><img src="./../images/watcher-sm.jpg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Main End -->
+
+  <div class="modal-outer" id="modal">
+    <div class="modal-inner">
+      <h5>Join My Newsletter!</h5>
+      <p>For all the latest updated and news, never spam!</p>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="youremail@here.com">
+        <button type="submit" class="btn">Send Free Updates</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-top">
+        <a class="grid-logo" href="./">
+          <img src="./../images/logo.svg" alt="Carl Michaels Logo">
+        </a>
+        <a class="btn grid-about" href="#" class="btn">About Me</a>
+        <button class="btn grid-news modalTrigger" data-modal-trigger>Newsletter Signup</button>
+        <a class="btn grid-contact" href="#" class="btn">Contact</a>
+        <div class="grid-social">
+          <img src="./../images/facebook.svg" alt="Facebook Logo">   
+          <img src="./../images/instagram.svg" alt="Instagram Logo">   
+          <img src="./../images/twitter.svg" alt="Twitter Logo">   
+        </div>
+      </div>
+      <div class="wrap-bottom">
+        <h5><a href="#">Books List</a></h5>
+        <ul>
+          <li><a href="./escape-from-the-hill.html">Escape From the Hill</a></li>
+          <li><a href="./the-watcher-in-the-woods.html">The Watcher in the Woods</a></li>
+          <li><a href="./jamais-vu.html">Jamais Vu</a></li>
+          <li><a href="./secrets.html">Secrets</a></li>
+          <li><a href="./home-sweet-home.html">Home Sweet Home</a></li>
+        </ul>
+        <p>&copy; Carl Michaels <span class="year">2020</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+.testimonials {
+    
+  .container {
+
+    h2 {
+
+    }
+
+    .wrap {
+
+      @media (min-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 50px;
+      }
+
+      blockquote {
+        background-color: $secondary;
+        color: $primary;
+        padding: 2em;
+        padding-bottom: 1em;
+        border-radius: 5px;
+        position: relative;
+        margin-top: 2em;
+        max-width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+  
+        @media (min-width: 500px) {
+          max-width: 350px;
+        }
+
+        @media (min-width: 992px) {
+
+        }
+  
+        &::before {
+          font-family: Georgia, serif;
+          position: absolute;
+          font-size: 3.7em;
+          line-height: 1;
+          top: 0.2em;
+          left: 0.2em;
+          content: "\201C";
+  
+          @media (min-width: 992px) {
+            left: 0.5em;
+          }
+        }
+  
+        &::after {
+          font-family: Georgia, serif;
+          position: absolute;
+          font-size: 3.7em;
+          float: right;
+          line-height: 1;
+          right: 0.2em;
+          bottom: -0.2em;
+          content: "\201D";
+  
+          @media (min-width: 500px) {
+            right: 0.5em;
+          }
+  
+          @media (min-width: 992px) {
+            right: 0.8em;
+            top: 1.8em;
+          }
+        }
+  
+        
+        p {
+          @media (min-width: 600px) {
+            margin-right: -10px;
+          }
+        }
+  
+        cite {
+          display: block;
+          margin-top: 0.7em;
+          margin-right: 0.5em;
+  
+          &::before {
+            content: '\2014';
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
