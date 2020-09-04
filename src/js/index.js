@@ -5,7 +5,11 @@ const lgBreakpoint = window.matchMedia("(min-width: 992px)");
 const xlBreakpoint = window.matchMedia("(min-width: 1300px)");
 
 // Horizontal scroll on books section
-scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
+if (lgBreakpoint.matches) {
+  scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
+} else {
+  scrollWrap.style.height = 'auto';
+}
 
 window.addEventListener('scroll', () => {
   const sticky = document.querySelector('.sticky');
@@ -19,7 +23,6 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('resize', () => {
-
   if (lgBreakpoint.matches) {
     scrollWrap.style.height = `${calcDynamicHeight(scrollStage)}px`;
   } else {
@@ -33,8 +36,8 @@ function calcDynamicHeight(ref) {
   const objectWidth = ref.scrollWidth;
 
   if (xlBreakpoint.matches) {
-    return objectWidth - vw + vh + 1100;
+    return objectWidth - vw + vh + (vw/4);
   } else if (lgBreakpoint.matches) {
-    return objectWidth - vw + vh + 100;
+    return objectWidth - vw + vh + (vw/4);
   }
 }

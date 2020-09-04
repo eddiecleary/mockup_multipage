@@ -7,6 +7,14 @@
     width: 85%;
     margin: 0 auto;
   }
+
+  @media (min-width: 992px) {
+    max-width: 850px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1050px;
+  }
 }
 
 section {

@@ -107,13 +107,13 @@ h1, .h1 {
 
 @media screen and (min-width: 320px) {
   h1, .h1 {
-    font-size: calc(31.104px + 55.47609 * ((100vw - 320px) / 880));
+    font-size: calc(31.104px + 41.04608 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
   h1, .h1 {
-    font-size: 86.58009px;
+    font-size: 72.15008px;
   }
 }
 
@@ -127,13 +127,13 @@ h2, .h2 {
 
 @media screen and (min-width: 320px) {
   h2, .h2 {
-    font-size: calc(25.92px + 29.93813 * ((100vw - 320px) / 880));
+    font-size: calc(25.92px + 20.62844 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
   h2, .h2 {
-    font-size: 55.85813px;
+    font-size: 46.54844px;
   }
 }
 
@@ -720,6 +720,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 992px) {
   .swiper-container {
     max-width: 800px;
+    padding: 4em 2em;
   }
 }
 
@@ -1513,6 +1514,18 @@ footer.footer .container .wrap-bottom ul li:not(:first-of-type) {
   }
 }
 
+@media (min-width: 992px) {
+  .container {
+    max-width: 850px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
 section {
   margin-top: 5em;
 }
@@ -1551,6 +1564,7 @@ main#index .testimonials .container h2 {
   main#index .books-scroll .container {
     position: relative;
     width: 100%;
+    max-width: 100%;
     min-height: 100vh;
   }
 }
@@ -1568,6 +1582,7 @@ main#index .testimonials .container h2 {
     top: 0;
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -1577,13 +1592,21 @@ main#index .testimonials .container h2 {
     height: 100%;
     will-change: transform;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-x: hidden;
   }
 }
 
 @media (min-width: 992px) {
   main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards {
     position: relative;
-    height: 100%;
+    margin-top: 0;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1597,7 +1620,18 @@ main#index .testimonials .container h2 {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding-left: 150px;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 992px) {
+  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards {
+    padding-left: calc((100vw - 850px) / 2);
+  }
+}
+
+@media (min-width: 992px) and (min-width: 1200px) {
+  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards {
+    padding-left: calc((100vw - 1050px) / 2);
   }
 }
 
@@ -1607,11 +1641,19 @@ main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards ar
 
 @media (min-width: 992px) {
   main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article {
-    height: 100px;
-    width: 900px;
+    width: 750px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -1622,6 +1664,7 @@ main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards ar
 @media (min-width: 992px) {
   main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article:not(:last-of-type) {
     margin-bottom: 0;
+    margin-right: 225px;
   }
 }
 
@@ -1630,15 +1673,28 @@ main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards ar
   max-width: 270px;
 }
 
+@media (min-width: 992px) {
+  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
 main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure figcaption {
   display: none;
 }
 
-main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article h4 {
+@media (min-width: 992px) {
+  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article .wrap {
+    margin-left: 50px;
+  }
+}
+
+main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article .wrap h4 {
   margin: 1em 0;
 }
 
-main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article p {
+main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article .wrap p {
   text-align: left;
   margin: 0 auto;
   line-height: 1.6;
@@ -1647,13 +1703,13 @@ main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards ar
 }
 
 @media (min-width: 992px) {
-  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article p {
+  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article .wrap p {
     max-width: 450px;
     text-align: center;
   }
 }
 
-main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article a.btn {
+main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article .wrap a.btn {
   margin-top: 1em;
   position: relative;
 }
