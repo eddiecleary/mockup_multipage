@@ -16,14 +16,14 @@ $themeColor: $secondary;
 
 .swiper-container {
   max-width: 350px;
-  padding: 2em 0;
+  padding: 2em 2em;
 
   @media (min-width: 600px) {
-    max-width: 95%;
+    max-width: 600px;
   }
 
   @media (min-width: 992px) {
-    max-width: 913px;
+    max-width: 800px;
   }
 
   .swiper-button-next:hover,

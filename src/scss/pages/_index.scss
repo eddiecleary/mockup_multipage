@@ -1,6 +1,11 @@
 main#index {
 
   .hero {
+    margin-top: 3em;
+
+    @media (min-width: 768px) {
+      margin-top: 5em;
+    }
 
     .container {
 
@@ -8,16 +13,30 @@ main#index {
 
       }
 
-      p {
-        margin-top: 1em;
-      }
-
       .slide-outer {
 
       }
 
       .btn-wrap {
-        margin-top: 2em;
+        margin-top: 1.6em;
+      }
+    }
+  }
+
+  .testimonials {
+
+    @media (min-width: 992px) {
+      margin-top: 7em;
+    }
+
+    .container {
+
+      h2 {
+        margin-bottom: 1.5em;
+
+        @media (min-width: 992px) {
+          margin-bottom: 0.5em;
+        }
       }
     }
   }
@@ -67,10 +86,11 @@ main#index {
                 justify-content: flex-start;
                 align-items: flex-start;
                 padding-left: 150px;
-                margin-top: 150px;
+                // margin-top: 150px;
               }
 
               article {
+                margin: 0 auto;
 
                 @media (min-width: 992px) {
                   height: 100px;
@@ -91,7 +111,12 @@ main#index {
                 figure {
 
                   img {
-                    max-width: 250px;
+                    width: 45%;
+                    max-width: 270px;
+
+                    // @media (min-width: 600px) {
+                    //   max-width: 250px;
+                    // }
                   }
 
                   figcaption {
@@ -107,7 +132,8 @@ main#index {
                   text-align: left;
                   margin: 0 auto;
                   line-height: 1.6;
-                  max-width: 350px;
+                  width: 90%;
+                  max-width: 400px;
 
                   @media (min-width: 992px) {
                     max-width: 450px;
