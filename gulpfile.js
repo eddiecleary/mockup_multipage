@@ -14,11 +14,8 @@ const gulp = require("gulp"),
   babel = require('rollup-plugin-babel'),
   commonjs = require('rollup-plugin-commonjs'),
   resolve = require('rollup-plugin-node-resolve'),
-  terser = require('rollup-plugin-terser'),
   sourcemaps = require('gulp-sourcemaps'),
   minify = require('gulp-babel-minify');
-
-  // var pump = require('pump');
 
 const paths = {
   styles: {
@@ -60,14 +57,6 @@ function styles() {
       .pipe(liveReload())
   );
 }
-
-// gulp.task('uglify-error-debugging', function (cb) {
-//   pump([
-//     gulp.src(paths.scripts.src),
-//     uglify(),
-//     gulp.dest('./')
-//   ], cb);
-// });
 
 function scripts() {
   return (
@@ -127,4 +116,5 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.icons = icons;
 exports.build = build;
+exports.dev = dev;
 exports.default = dev;
