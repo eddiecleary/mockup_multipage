@@ -231,6 +231,30 @@ span.underline {
   left: 0;
 }
 
+.return {
+  padding: 15px;
+  background-color: #160079;
+  border-radius: 5px;
+  z-index: 200;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.return a {
+  color: #ffd700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.return a svg {
+  margin-right: 8px;
+}
+
 /*
 
 Styling for Hero Slider Start

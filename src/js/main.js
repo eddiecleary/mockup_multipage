@@ -5,6 +5,7 @@ const subMenu = document.getElementById('dropdown-trigger');
 const modalTrigger = document.querySelectorAll('.modalTrigger');
 const modal = document.getElementById('modal');
 const year = document.getElementById('year');
+const back = document.getElementById('back');
 
 // set year in copyright
 year.textContent = new Date().getFullYear();
@@ -70,3 +71,19 @@ function closeMenu() {
 function toggleModal() {
   modal.classList.toggle('shown');
 }
+
+const mdBreakpoint = window.matchMedia("(min-width: 768px)");
+
+if (mdBreakpoint.matches) {
+  back.textContent = 'Back To eddiecleary.com';
+} else {
+  back.textContent = 'Back';
+}
+
+window.addEventListener('resize', () => {
+  if (mdBreakpoint.matches) {
+    back.textContent = 'Back To eddiecleary.com';
+  } else {
+    back.textContent = 'Back';
+  }
+});

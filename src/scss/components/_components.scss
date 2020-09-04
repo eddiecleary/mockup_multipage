@@ -7,3 +7,24 @@ span.underline {
   bottom: 0;
   left: 0;
 }
+
+.return {
+  padding: 15px;
+  background-color: #160079;
+  
+  border-radius: 5px;
+  z-index: 200;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  a {
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
