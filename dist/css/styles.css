@@ -1275,17 +1275,17 @@ section.intro .container .wrap .wrap-col h2 {
   position: relative;
 }
 
-@media (min-width: 992px) {
-  .header .container .wrap nav > ul#nav li.sub-menu-hover a.books-link {
-    margin-right: 0.7em;
-  }
-}
-
 .header .container .wrap nav > ul#nav li.sub-menu-hover button {
   background: none;
   border: none;
   cursor: pointer;
   position: absolute;
+}
+
+@media (min-width: 992px) {
+  .header .container .wrap nav > ul#nav li.sub-menu-hover button {
+    position: relative;
+  }
 }
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover button svg {

@@ -70,9 +70,6 @@
               a.books-link {
                 position: relative;
 
-                @media (min-width: 992px) {
-                  margin-right: 0.7em;
-                }
               }
 
               button {
@@ -80,6 +77,10 @@
                 border: none;
                 cursor: pointer;
                 position: absolute;
+
+                @media (min-width: 992px) {
+                  position: relative;
+                }
                 
                 svg {
                   position: relative;
