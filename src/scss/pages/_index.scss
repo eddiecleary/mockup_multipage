@@ -123,19 +123,22 @@ main#index {
                 }
 
                 figure {
+                  
+                  a {
 
-                  img {
-                    width: 45%;
-                    max-width: 270px;
+                    img {
+                      width: 45%;
+                      max-width: 270px;
 
-                    @media (min-width: 992px) {
-                      width: 100%;
-                      max-width: 250px;
+                      @media (min-width: 992px) {
+                        width: 100%;
+                        max-width: 250px;
+                      }
                     }
-                  }
 
-                  figcaption {
-                    display: none;
+                    figcaption {
+                      display: none;
+                    }
                   }
                 }
 

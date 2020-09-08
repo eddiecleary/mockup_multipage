@@ -1704,19 +1704,19 @@ main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards ar
   }
 }
 
-main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure img {
+main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure a img {
   width: 45%;
   max-width: 270px;
 }
 
 @media (min-width: 992px) {
-  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure img {
+  main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure a img {
     width: 100%;
     max-width: 250px;
   }
 }
 
-main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure figcaption {
+main#index .books-scroll .container .scroll-wrap .sticky .scroll-stage .cards article figure a figcaption {
   display: none;
 }
 
