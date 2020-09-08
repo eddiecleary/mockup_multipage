@@ -1271,18 +1271,25 @@ section.intro .container .wrap .wrap-col h2 {
   }
 }
 
-.header .container .wrap nav > ul#nav li.sub-menu-hover a.wrap-svg {
+.header .container .wrap nav > ul#nav li.sub-menu-hover a.books-link {
   position: relative;
 }
 
 @media (min-width: 992px) {
-  .header .container .wrap nav > ul#nav li.sub-menu-hover a.wrap-svg {
+  .header .container .wrap nav > ul#nav li.sub-menu-hover a.books-link {
     margin-right: 0.7em;
   }
 }
 
-.header .container .wrap nav > ul#nav li.sub-menu-hover a.wrap-svg svg {
+.header .container .wrap nav > ul#nav li.sub-menu-hover button {
+  background: none;
+  border: none;
+  cursor: pointer;
   position: absolute;
+}
+
+.header .container .wrap nav > ul#nav li.sub-menu-hover button svg {
+  position: relative;
   bottom: 20%;
   margin-left: 2px;
 }
@@ -1372,6 +1379,10 @@ section.intro .container .wrap .wrap-col h2 {
   overflow: hidden;
   -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease;
+}
+
+.header .container .wrap nav #navBtn {
+  outline: none;
 }
 
 @media (min-width: 992px) {
@@ -1760,6 +1771,16 @@ main#books .timeline .container .wrap article {
   position: relative;
 }
 
+main#books .timeline .container .wrap article:not(:first-of-type) {
+  padding-top: 80px;
+}
+
+@media (min-width: 992px) {
+  main#books .timeline .container .wrap article:not(:first-of-type) {
+    padding-top: 0;
+  }
+}
+
 @media (min-width: 992px) {
   main#books .timeline .container .wrap article {
     display: -webkit-box;
@@ -1802,6 +1823,7 @@ main#books .timeline .container .wrap article figure figcaption {
 }
 
 main#books .timeline .container .wrap article .timeline-line {
+  display: none;
   height: 100%;
   width: 12px;
   background-color: #fff2d9;
@@ -1809,6 +1831,12 @@ main#books .timeline .container .wrap article .timeline-line {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+@media (min-width: 992px) {
+  main#books .timeline .container .wrap article .timeline-line {
+    display: block;
+  }
 }
 
 main#books .timeline .container .wrap article .timeline-line svg {

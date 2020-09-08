@@ -67,15 +67,22 @@
 
             &.sub-menu-hover {
 
-              a.wrap-svg {
+              a.books-link {
                 position: relative;
 
                 @media (min-width: 992px) {
                   margin-right: 0.7em;
                 }
+              }
 
+              button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                
                 svg {
-                  position: absolute;
+                  position: relative;
                   bottom: 20%;
                   margin-left: 2px;
                 }
@@ -183,6 +190,7 @@
         }
 
         #navBtn {
+          outline: none;
 
           @media (min-width: 992px) {
             display: none;

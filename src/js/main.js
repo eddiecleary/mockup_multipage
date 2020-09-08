@@ -2,6 +2,7 @@ const nav = document.getElementById('nav');
 const header = document.getElementById('header');
 const navBtn = document.getElementById('navBtn');
 const subMenu = document.getElementById('dropdown-trigger');
+const subMenu2 = document.getElementById('dropdown-trigger-2');
 const modalTrigger = document.querySelectorAll('.modalTrigger');
 const modal = document.getElementById('modal');
 const year = document.getElementById('year');
@@ -18,6 +19,10 @@ navBtn.addEventListener('click', function(){
     navBtn.classList.add('is-active');
 
     subMenu.addEventListener('mouseover', openSubMenu, {
+      once: true
+    });
+
+    subMenu2.addEventListener('click', openSubMenu, {
       once: true
     });
 
@@ -69,6 +74,7 @@ function closeMenu() {
 }
 
 function toggleModal() {
+  closeMenu();
   modal.classList.toggle('shown');
 }
 

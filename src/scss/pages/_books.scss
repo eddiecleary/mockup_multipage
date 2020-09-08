@@ -13,12 +13,20 @@ main#books {
         article {
           position: relative;
 
+          &:not(:first-of-type) {
+            padding-top: 80px;
+
+            @media (min-width: 992px) {
+              padding-top: 0;
+            }
+          }
+
           @media (min-width: 992px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 650px;
-
+            
             &:nth-of-type(odd) {
               flex-direction: row-reverse;
 
@@ -51,12 +59,17 @@ main#books {
           }
 
           .timeline-line {
+            display: none;
             height: 100%;
             width: 12px;
             background-color: $secondary;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+
+            @media (min-width: 992px) {
+              display: block;
+            }
             
             svg {
               position: absolute;
