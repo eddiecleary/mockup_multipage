@@ -4,6 +4,8 @@ This website was created to show an example of a multi page website. The website
 
 ---
 ![gtmetrix](/images/multipage-gtmetrix.png)
+
 ---
 ![gtmetrix](/images/multipage-lighthouse.png)
+
 ---
