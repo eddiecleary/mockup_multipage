@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 button,
@@ -218,14 +218,14 @@ h6, .h6 {
 }
 
 .highlight {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 span.underline {
   width: 100%;
   height: 3px;
-  color: #a90d0d;
-  background-color: #a90d0d;
+  color: #d60b0b;
+  background-color: #d60b0b;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -233,7 +233,7 @@ span.underline {
 
 .return {
   padding: 15px;
-  background-color: #160079;
+  background-color: #2D3033;
   border-radius: 5px;
   z-index: 200;
   position: fixed;
@@ -242,7 +242,7 @@ span.underline {
 }
 
 .return a {
-  color: #ffd700;
+  color: #18A0FB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,7 +751,7 @@ button.swiper-pagination-bullet {
 
 .swiper-container .swiper-button-next:hover,
 .swiper-container .swiper-button-prev:hover {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 .swiper-container .swiper-pagination-bullet {
@@ -774,12 +774,12 @@ Styling for Hero Slider End
 .btn {
   display: inline-block;
   padding: 1em 2em;
-  background-color: #a90d0d;
+  background-color: #d60b0b;
   color: #fff2d9;
 }
 
 .btn:hover {
-  background-color: #7a0909;
+  background-color: #a50909;
   color: #fff2d9;
 }
 
@@ -803,7 +803,7 @@ button.btn {
 }
 
 .btn-link:hover svg path {
-  stroke: #a90d0d;
+  stroke: #d60b0b;
 }
 
 .btn-link svg {
@@ -1212,8 +1212,8 @@ section.intro .container .wrap .wrap-col h2 {
 }
 
 .header .container .wrap nav > ul#nav {
-  border-top: 5px solid #a90d0d;
-  border-bottom: 5px solid #a90d0d;
+  border-top: 5px solid #d60b0b;
+  border-bottom: 5px solid #d60b0b;
   position: absolute;
   top: 100%;
   left: 0;
@@ -1333,12 +1333,12 @@ section.intro .container .wrap .wrap-col h2 {
 }
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover.expanded a.wrap-svg {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover.expanded a.wrap-svg svg {
   bottom: 0%;
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 .header .container .wrap nav > ul#nav li.sub-menu-hover.expanded ul.sub-menu {
@@ -1357,7 +1357,7 @@ section.intro .container .wrap .wrap-col h2 {
 }
 
 .header .container .wrap nav > ul#nav li a:hover {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 .header .container .wrap nav > ul#nav li button.modalTrigger {
@@ -1371,7 +1371,7 @@ section.intro .container .wrap .wrap-col h2 {
 }
 
 .header .container .wrap nav > ul#nav li button.modalTrigger:hover {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 .header .container .wrap nav > ul#nav ul.sub-menu {
@@ -1394,7 +1394,7 @@ section.intro .container .wrap .wrap-col h2 {
 .header .container .wrap nav #navBtn.hamburger.is-active .hamburger-inner,
 .header .container .wrap nav #navBtn.hamburger.is-active .hamburger-inner::before,
 .header .container .wrap nav #navBtn.hamburger.is-active .hamburger-inner::after {
-  background-color: #a90d0d;
+  background-color: #d60b0b;
 }
 
 footer.footer {
@@ -1414,7 +1414,7 @@ footer.footer .container .grid-top {
     grid-template-columns: repeat(3, -webkit-fit-content);
     grid-template-columns: repeat(3, fit-content);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logo social social" ". news ." "about . contact";
+    grid-template-areas: "logo social social" ". news ." "about . contact";
     width: 100%;
     max-width: 100%;
     -webkit-box-align: start;
@@ -1476,8 +1476,8 @@ footer.footer .container .wrap-bottom h5 {
 }
 
 footer.footer .container .wrap-bottom h5:hover {
-  -webkit-text-decoration-color: #a90d0d;
-  text-decoration-color: #a90d0d;
+  -webkit-text-decoration-color: #d60b0b;
+  text-decoration-color: #d60b0b;
 }
 
 footer.footer .container .wrap-bottom h5 a {
@@ -1485,7 +1485,7 @@ footer.footer .container .wrap-bottom h5 a {
 }
 
 footer.footer .container .wrap-bottom h5 a:hover {
-  color: #a90d0d;
+  color: #d60b0b;
 }
 
 footer.footer .container .wrap-bottom ul {
@@ -1923,7 +1923,7 @@ main#book section.content .container p {
 }
 
 main#book section.content .container p .dropcap {
-  color: #a90d0d;
+  color: #d60b0b;
   font-size: 4em;
   text-indent: 30px;
   line-height: 0;
@@ -2174,7 +2174,7 @@ main#book section.more .container .wrap a img {
 }
 
 #about .content .container p .dropcap {
-  color: #a90d0d;
+  color: #d60b0b;
   font-size: 4em;
   text-indent: 30px;
   line-height: 0;
