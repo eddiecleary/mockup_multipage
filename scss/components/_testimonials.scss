@@ -1,5 +1,5 @@
 .testimonials {
-    
+
   .container {
 
     h2 {
@@ -12,7 +12,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 20px;
       }
 
       blockquote {
@@ -26,15 +25,15 @@
         max-width: 275px;
         margin-left: auto;
         margin-right: auto;
-  
+
         @media (min-width: 500px) {
           max-width: 350px;
         }
 
         @media (min-width: 992px) {
-
+            margin: 2rem;
         }
-  
+
         &::before {
           font-family: Georgia, serif;
           position: absolute;
@@ -43,12 +42,12 @@
           top: 0.2em;
           left: 0.2em;
           content: "\201C";
-  
+
           @media (min-width: 992px) {
             left: 0.5em;
           }
         }
-  
+
         &::after {
           font-family: Georgia, serif;
           position: absolute;
@@ -58,29 +57,29 @@
           right: 0.2em;
           bottom: -0.2em;
           content: "\201D";
-  
+
           @media (min-width: 500px) {
             right: 0.5em;
           }
-  
+
           @media (min-width: 992px) {
             right: 0.8em;
             top: 1.8em;
           }
         }
-  
-        
+
+
         p {
           @media (min-width: 600px) {
             margin-right: -10px;
           }
         }
-  
+
         cite {
           display: block;
           margin-top: 0.7em;
           margin-right: 0.5em;
-  
+
           &::before {
             content: '\2014';
             margin-right: 0.5em;

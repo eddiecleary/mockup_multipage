@@ -64,7 +64,7 @@ function closeMenu() {
     nav.style.pointerEvents = 'none';
     navBtn.classList.remove('is-active');
     subMenu.classList.remove('expanded');
-    
+
     setTimeout(function() {
       nav.classList.remove('expanded');
       nav.style.opacity = "";
@@ -80,16 +80,16 @@ function toggleModal() {
 
 const mdBreakpoint = window.matchMedia("(min-width: 768px)");
 
-if (mdBreakpoint.matches) {
-  back.textContent = 'Back To eddiecleary.com';
-} else {
-  back.textContent = 'Back';
-}
+// if (mdBreakpoint.matches) {
+//   back.textContent = 'Back To eddiecleary.com';
+// } else {
+//   back.textContent = 'Back';
+// }
 
-window.addEventListener('resize', () => {
-  if (mdBreakpoint.matches) {
-    back.textContent = 'Back To eddiecleary.com';
-  } else {
-    back.textContent = 'Back';
-  }
-});
+// window.addEventListener('resize', () => {
+//   if (mdBreakpoint.matches) {
+//     back.textContent = 'Back To eddiecleary.com';
+//   } else {
+//     back.textContent = 'Back';
+//   }
+// });
