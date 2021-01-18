@@ -5,6 +5,7 @@
     "main": "gulpfile.js",
     "scripts": {
         "dev": "parcel index.html",
+        "prebuild": "rm -rf dist",
         "build": "parcel build index.html"
     },
     "repository": {
