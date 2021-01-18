@@ -816,7 +816,9 @@ section.intro .container .wrap .wrap-col {
         padding: 0.5em 0; }
         @media (min-width: 992px) {
           .header .container .wrap nav > ul#nav li {
-            padding: 0 0.5em; } }
+            padding: 0 0.5em; }
+            .header .container .wrap nav > ul#nav li:not(:last-of-type) {
+              margin-right: 2rem; } }
         .header .container .wrap nav > ul#nav li.sub-menu-hover a.books-link {
           position: relative; }
         .header .container .wrap nav > ul#nav li.sub-menu-hover button {
@@ -843,7 +845,7 @@ section.intro .container .wrap .wrap-col {
               align-items: flex-start;
               padding-top: 1.5em;
               background-color: #241403;
-              width: max-content;
+              width: 100%;
               padding: 1em;
               opacity: 0;
               pointer-events: all;
@@ -1343,6 +1345,7 @@ main#contact .intro .container .social-wrap {
   margin-top: 3em; }
   main#contact .intro .container .social-wrap img {
     width: 60px;
+    height: 60px;
     cursor: pointer; }
 
 main#contact .contact-form {

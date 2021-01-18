@@ -10,7 +10,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
+
 
       > a {
         width: 100%;
@@ -42,7 +42,7 @@
           z-index: 10000;
           opacity: 0;
           pointer-events: none;
-          
+
           &.expanded {
             opacity: 1;
             pointer-events: all;
@@ -63,6 +63,9 @@
             @media(min-width: 992px) {
               padding: 0 0.5em;
 
+              &:not(:last-of-type) {
+                  margin-right: 2rem;
+              }
             }
 
             &.sub-menu-hover {
@@ -81,7 +84,7 @@
                 @media (min-width: 992px) {
                   position: relative;
                 }
-                
+
                 svg {
                   position: relative;
                   bottom: 20%;
@@ -101,7 +104,7 @@
                   align-items: flex-start;
                   padding-top: 1.5em;
                   background-color: $primary;
-                  width: max-content;
+                  width :100%;
                   padding: 1em;
                   opacity: 0;
                   pointer-events: all;
@@ -109,7 +112,7 @@
 
                   li {
                     padding-left: 0;
-                    
+
                     &:not(:last-of-type) {
                       padding-bottom: 1em;
                     }
@@ -183,9 +186,9 @@
           }
 
           > li {
-            
+
             a {
-              
+
             }
           }
         }
@@ -197,7 +200,7 @@
             display: none;
           }
         }
-        
+
         #navBtn.hamburger.is-active {
 
           .hamburger-inner,

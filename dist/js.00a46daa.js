@@ -119,11 +119,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/index.js":[function(require,module,exports) {
 // GSAP
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 var sections = gsap.utils.toArray(".card");
-console.log(sections);
 gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1) - 10,
+  xPercent: -100 * (sections.length - 1),
   ease: "none",
   scrollTrigger: {
     trigger: ".cards",
@@ -131,7 +130,7 @@ gsap.to(sections, {
     scrub: 1,
     snap: 1 / (sections.length - 1),
     end: function end() {
-      return "+=" + document.querySelector(".cards").offsetWidth;
+      return "+=" + document.querySelector(".cards").offsetWidth / 2;
     }
   }
 });
@@ -163,7 +162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63708" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55564" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
