@@ -3,3 +3,5 @@ images/original
 # Local Netlify folder
 .netlify
 .DS_Store
+.cache
+dist/
