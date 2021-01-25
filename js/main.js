@@ -46,6 +46,7 @@ modalTrigger.forEach(el => el.addEventListener('click', toggleModal));
 modal.addEventListener('click', function(e) {
   if (!e.target.closest('.modal-inner')) {
     modal.classList.remove('shown');
+    modalTrigger.forEach(el => el.classList.remove('highlight'));
   }
 });
 
@@ -53,6 +54,7 @@ modal.addEventListener('click', function(e) {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && modal.classList.contains('shown')) {
     modal.classList.remove('shown');
+    modalTrigger.forEach(el => el.classList.remove('highlight'));
   }
 });
 
@@ -76,6 +78,7 @@ function closeMenu() {
 function toggleModal() {
   closeMenu();
   modal.classList.toggle('shown');
+  modalTrigger.forEach(el => el.classList.toggle('highlight'));
 }
 
 const mdBreakpoint = window.matchMedia("(min-width: 768px)");

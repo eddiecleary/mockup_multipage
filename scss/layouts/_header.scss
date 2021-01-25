@@ -151,7 +151,11 @@
               color: $secondary;
 
               &:hover {
-                color: $tertiary;
+                color: lighten($tertiary, 25%);
+              }
+
+              &.active {
+                  color: $tertiary;
               }
             }
 
