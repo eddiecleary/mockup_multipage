@@ -20,3 +20,6 @@ ScrollTrigger.matchMedia({
     }
 });
 
+document.getElementById('scrolltobooks').addEventListener('click', function(){
+    gsap.to(window, {duration: 1, scrollTo: "#books"});
+});

@@ -19,10 +19,8 @@
     },
     "homepage": "https://github.com/eddiecleary/mockup_multipage#readme",
     "devDependencies": {
-        "@babel/core": "^7.11.4",
         "@glidejs/glide": "^3.4.1",
         "hamburgers": "^1.1.3",
-        "parcel-bundler": "^1.12.4",
         "sass": "^1.32.4",
         "swiper": "^6.1.2"
     },
