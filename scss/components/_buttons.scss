@@ -24,7 +24,7 @@ button.btn {
     background-color: transparent;
 
     svg {
-      margin-left: 13px;
+      right: 14px;
 
       path {
         stroke: $tertiary;
@@ -40,6 +40,7 @@ button.btn {
     position: absolute;
     top: 52.5%;
     transform: translateY(-50%);
+    right: 18px;
 
     path {
       stroke-width: 5px;
