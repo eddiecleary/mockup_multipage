@@ -13,7 +13,7 @@
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s ease;
+  visibility: hidden;
 
   .modal-inner {
     background-color: $primary;
@@ -36,7 +36,7 @@
         display: block;
         text-align: left;
         margin-bottom: 0.5em;
-      } 
+      }
 
       input {
         padding: 1em;
@@ -50,7 +50,7 @@
 
       button {
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
         margin-top: 2em;
       }
     }
@@ -59,6 +59,8 @@
   &.shown {
     opacity: 1;
     pointer-events: all;
+    visibility: visible;
+    transition: all 0.5s ease;
 
     .modal-inner {
       transform: translateY(0%);
